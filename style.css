@@ -1,0 +1,192 @@
+* {
+    font-family: Arial;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto auto 30vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+       "head head head"
+       "nav nav aside"
+       "article article aside "
+       "foot foot foot";
+}
+header {
+    background-color: aquamarine;
+    color: gainsboro;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    grid-area: head;
+    display: block;
+    background-image: url("mt-rainier-sunset-l.jpg");
+    background-size: cover;
+}
+
+#washington_header {
+    font-size: 80px;
+}
+
+nav {
+    text-align: left;
+    color: white;
+    background-color: #333;
+    padding: 16px 0px 16px 0px;
+    grid-area: nav;
+}
+
+article {
+    background-color:aliceblue;
+    grid-area: article;
+    width: 70vw;
+}
+
+#main-info {
+    margin: 15px;
+}
+
+aside {
+    background-color: seagreen;
+    padding: 20px;
+    right: 0;
+    grid-area: aside;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    grid-area: foot;
+    height: 60px;
+}
+
+#footer_image {
+    padding: 5px;
+}
+
+nav a {
+    color:white;
+    border-right: 1px solid #bbb;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+.main_page {
+    padding: 5px;
+}
+#main_image {
+    float: right;
+    padding: 20px;
+    width: 275px;
+    height: 300px;
+}
+
+
+td {
+    padding: 15px;
+    margin: 15px;
+}
+
+table {
+    border-top: 3px solid black;
+    
+}
+
+#contact_button_div {
+    position: fixed;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+div > a{
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+
+}
+
+div > a:hover {
+    border: 1px solid black;
+}
+
+form {
+   font: 13px Arial;
+   background-color: #eee;
+   padding: 10px;
+}
+
+label {
+   width: 50px;
+   display: inline-block;
+   text-align: right;
+   margin-right: 8px;
+}
+
+input[type=text], input[type=email], select {
+   box-sizing: border-box;
+   width: 250px;
+   padding: 10px;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+}
+
+input[type=submit] {
+   width: 200px;
+   background-color: #09f;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: #07d;
+}
+
+/* Contact Form CSS */
+
+form {
+    background-color: #eee;
+    padding: 10px;
+ }
+ 
+ label {
+    width: 110px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 8px;
+ }
+ 
+ input[type=text], input[type=email] select {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+ }
+
+ #comment {
+    height: 100px;
+ }
+ 
+ input[type=submit] {
+    width: 200px;
+    background-color: forestgreen;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+    background-color: rgb(91, 168, 91);
+ }
